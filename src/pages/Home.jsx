@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
-import HomeBody from "../components/HomeBody";
+import HomeSection from "../components/HomeSection";
 
 const items = [
   {
@@ -21,7 +21,7 @@ function Home() {
   return (
     <div>
       <Nav items={items} />
-      <HomeBody />
+      <HomeSection />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import React from "react";
-import image1 from "../Photos/image1.png";
 
 const Wrapper = styled.div`
   display: flex;
@@ -33,7 +32,7 @@ const Image = styled.img`
   height: 350px;
 `;
 
-function HomeBody() {
+function HomeSection() {
   return (
     <Wrapper>
       <Left>
@@ -42,10 +41,10 @@ function HomeBody() {
         <Text style={{ color: "#1456A0" }}>In Cafe's ?</Text>
       </Left>
       <Right>
-        <Image src={image1} alt="My image" />
+        <Image src={process.env.PUBLIC_URL+"/images/home.png"} alt="home-img" />
       </Right>
     </Wrapper>
   );
 }
 
-export default HomeBody;
+export default HomeSection;
